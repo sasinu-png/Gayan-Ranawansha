@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayan Ranawansha | Media Teacher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#22d3ee',
+                        gold: '#fbbf24',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-primary text-slate-100">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 animate-slide-down">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div></div> <!-- Empty space where logo was -->
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+                <a href="index.html" class="nav-link hover:text-accent transition">Home</a>
+                <a href="about.html" class="nav-link hover:text-accent transition">About</a>
+                <a href="classes.html" class="nav-link hover:text-accent transition">Classes</a>
+                <a href="gallery.html" class="nav-link hover:text-accent transition">Gallery</a>
+                <a href="contact.html" class="nav-link hover:text-accent transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-primary/95 backdrop-blur-lg border-b border-white/10 p-6 flex-col space-y-4 text-center md:hidden">
+            <a href="index.html" class="text-lg">Home</a>
+            <a href="about.html" class="text-lg">About</a>
+            <a href="classes.html" class="text-lg">Classes</a>
+            <a href="gallery.html" class="text-lg">Gallery</a>
+            <a href="contact.html" class="text-lg">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&q=80&w=2000"
+                alt="Studio Background" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div class="animate-fade-in">
+                <span
+                    class="bg-accent/10 text-accent px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block">Professional
+                    Media Teacher</span>
+                <h1 class="text-6xl md:text-8xl font-bold font-heading mb-6 tracking-tight leading-none text-glow">
+                    Gayan <br> <span class="text-accent underline decoration-gold/50">Ranawansha</span>
+                </h1>
+                <p class="text-lg text-slate-400 mb-8 max-w-lg leading-relaxed">
+                    Shape your future in the world of media and communication. Professional training, industry insights,
+                    and creative mastery led by Gayan Ranawansha.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="classes.html"
+                        class="bg-accent hover:bg-white text-primary px-8 py-4 rounded-full font-bold transition-all duration-300 transform hover:scale-105 shadow-lg shadow-accent/20">
+                        View Schedule
+                    </a>
+                    <a href="contact.html"
+                        class="border border-white/20 hover:border-accent px-8 py-4 rounded-full font-bold transition-all duration-300 backdrop-blur-sm">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block relative animate-fade-in pt-12" style="animation-delay: 0.2s;">
+                <div
+                    class="relative z-10 rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl max-h-[650px] group">
+                    <img src="gayan3.jpeg" alt="Gayan Ranawansha"
+                        class="w-full h-full object-cover object-top transition-all duration-700 group-hover:scale-110 mask-left">
+                    <!-- Luxury Gradient Masks -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary/40 via-transparent to-transparent"></div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary via-transparent to-transparent"></div>
+                </div>
+                <!-- Ambient Glow -->
+                <div class="absolute -bottom-12 -right-12 w-80 h-80 bg-accent/20 blur-[120px] -z-10"></div>
+                <div class="absolute -top-12 -left-12 w-80 h-80 bg-gold/10 blur-[120px] -z-10 text-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats/Services -->
+    <section class="py-24 bg-slate-900/50">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-10 rounded-3xl">
+                <i class="fas fa-video text-accent text-3xl mb-6"></i>
+                <h3 class="text-2xl font-bold mb-4">Media Labs</h3>
+                <p class="text-slate-400">Practical hand-on experience with modern broadcasting equipment and digital
+                    tools.</p>
+            </div>
+            <div class="glass-card p-10 rounded-3xl">
+                <i class="fas fa-users text-gold text-3xl mb-6"></i>
+                <h3 class="text-2xl font-bold mb-4">Expert Guidance</h3>
+                <p class="text-slate-400">Years of teaching experience in media communication and professional
+                    journalism.</p>
+            </div>
+            <div class="glass-card p-10 rounded-3xl">
+                <i class="fas fa-certificate text-accent text-3xl mb-6"></i>
+                <h3 class="text-2xl font-bold mb-4">Proven Success</h3>
+                <p class="text-slate-400">Helping hundreds of students achieve their dreams in the media industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Preview Section -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">Class Schedule</h2>
+                    <p class="text-slate-400 max-w-xl">Join me at various locations across the island. Find the nearest
+                        class and start your journey today.</p>
+                </div>
+                <a href="classes.html" class="text-accent font-bold group">
+                    View Full Schedule <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Sample Card -->
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition">
+                        <i class="fas fa-calendar-alt text-4xl text-accent"></i>
+                    </div>
+                    <h4 class="text-gold font-bold mb-2">Saturday</h4>
+                    <h3 class="text-2xl font-bold mb-4">Azone - Kalutara</h3>
+                    <div class="flex items-center text-slate-400 mb-2">
+                        <i class="far fa-clock mr-2"></i> 10.00 AM - 12.00 PM
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden group">
+                    <h4 class="text-gold font-bold mb-2">Thursday</h4>
+                    <h3 class="text-2xl font-bold mb-4">Didula - Pothuvila</h3>
+                    <div class="flex items-center text-slate-400 mb-2">
+                        <i class="far fa-clock mr-2"></i> 4.30 PM - 6.30 PM
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden group">
+                    <h4 class="text-gold font-bold mb-2">Friday</h4>
+                    <h3 class="text-2xl font-bold mb-4">Rovistar - Matugama</h3>
+                    <div class="flex items-center text-slate-400 mb-2">
+                        <i class="far fa-clock mr-2"></i> 2.30 PM - 4.30 PM
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Hub -->
+    <section class="py-24 bg-gradient-to-b from-primary to-slate-900 overflow-hidden relative">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl font-bold mb-12">Connect With Me</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <a href="https://www.facebook.com/share/p/1AjBsUZ4dL/" target="_blank"
+                    class="w-20 h-20 rounded-full glass border border-white/10 flex items-center justify-center text-3xl hover:bg-blue-600 transition-all duration-500 group">
+                    <i class="fab fa-facebook-f group-hover:scale-125 transition"></i>
+                </a>
+                <a href="https://www.youtube.com/live/9cSQGZBtNzE?si=VngwMAlRqsJomWMH" target="_blank"
+                    class="w-20 h-20 rounded-full glass border border-white/10 flex items-center justify-center text-3xl hover:bg-red-600 transition-all duration-500 group">
+                    <i class="fab fa-youtube group-hover:scale-125 transition"></i>
+                </a>
+                <a href="mailto:gayanmadusha22@gmail.com"
+                    class="w-20 h-20 rounded-full glass border border-white/10 flex items-center justify-center text-3xl hover:bg-accent hover:text-primary transition-all duration-500 group">
+                    <i class="fas fa-envelope group-hover:scale-125 transition"></i>
+                </a>
+                <a href="tel:071-5717757"
+                    class="w-20 h-20 rounded-full glass border border-white/10 flex items-center justify-center text-3xl hover:bg-green-500 transition-all duration-500 group">
+                    <i class="fas fa-phone group-hover:scale-125 transition"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/5">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-2">
+                <a href="#" class="text-2xl font-bold font-heading mb-6 block">
+                    <span class="text-yellow-400">GAYAN</span> <span class="text-green-500">RANAWANSHA</span>
+                </a>
+                <p class="text-slate-500 max-w-md">Professional Media Education for students aiming for excellence.
+                    Building the future of media in Sri Lanka one class at a time.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-accent">Quick Links</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                    <li><a href="classes.html" class="hover:text-white transition">Classes</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-accent">Contact</h4>
+                <p class="text-slate-400 mb-2">071-5717757</p>
+                <p class="text-slate-400">071-5717757 (WhatsApp)</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-12 pt-8 border-t border-white/5 text-center text-slate-600 text-sm">
+            &copy; 2024 Gayan Ranawansha Media. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

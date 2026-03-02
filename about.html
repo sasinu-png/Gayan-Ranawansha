@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Gayan Ranawansha | Media Teacher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#22d3ee',
+                        gold: '#fbbf24',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-primary text-slate-100">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 nav-scrolled animate-slide-down">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div></div>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+                <a href="index.html" class="nav-link hover:text-accent transition">Home</a>
+                <a href="about.html" class="nav-link text-accent">About</a>
+                <a href="classes.html" class="nav-link hover:text-accent transition">Classes</a>
+                <a href="gallery.html" class="nav-link hover:text-accent transition">Gallery</a>
+                <a href="contact.html" class="nav-link hover:text-accent transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-primary/95 backdrop-blur-lg border-b border-white/10 p-6 flex-col space-y-4 text-center md:hidden">
+            <a href="index.html" class="text-lg">Home</a>
+            <a href="about.html" class="text-lg text-accent">About</a>
+            <a href="classes.html" class="text-lg">Classes</a>
+            <a href="contact.html" class="text-lg">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="pt-40 pb-24">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h1 class="text-5xl md:text-7xl font-bold font-heading mb-8">Empowering The <br><span
+                        class="text-accent">Media Pioneers</span></h1>
+                <p class="text-lg text-slate-400 mb-6 leading-relaxed">
+                    Gayan Ranawansha is a dedicated Media Teacher with a passion for nurturing creative talent. With
+                    years of experience in the industry and education sector, he brings a unique perspective to the
+                    classroom, blending theoretical knowledge with real-world practical insights.
+                </p>
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-start">
+                        <div class="bg-accent/20 p-3 rounded-lg mr-4">
+                            <i class="fas fa-check text-accent"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl">Industry Experience</h4>
+                            <p class="text-slate-500">Deep understanding of modern media landscapes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="rounded-3xl overflow-hidden border border-white/10 shadow-2xl max-h-[500px]">
+                    <img src="sdc.jpeg" alt="Gayan Ranawansha" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="absolute -top-10 -right-10 glass p-8 rounded-2xl hidden lg:block">
+                    <div class="text-4xl font-bold font-heading text-gold mb-1">10+</div>
+                    <div class="text-xs uppercase tracking-widest text-slate-400">Years of teaching</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-24 pb-12 bg-slate-900 border-t border-white/5 relative overflow-hidden">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 relative z-10">
+            <div class="animate-fade-in">
+                <a href="#" class="text-2xl font-bold font-heading mb-6 block">
+                    <span class="text-yellow-400">GAYAN</span> <span class="text-green-500">RANAWANSHA</span>
+                </a>
+                <p class="text-slate-500 max-w-md">Professional Media Education for students aiming for excellence.
+                    Building the future of media in Sri Lanka one class at a time.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-accent">Quick Links</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                    <li><a href="classes.html" class="hover:text-white transition">Classes</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-accent">Contact</h4>
+                <p class="text-slate-400 mb-2">071-5717757</p>
+                <p class="text-slate-400">071-5717757 (WhatsApp)</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-12 pt-8 border-t border-white/5 text-center text-slate-600 text-sm">
+            &copy; 2024 Gayan Ranawansha Media. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

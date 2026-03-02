@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Gayan Ranawansha | Media Teacher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#22d3ee',
+                        gold: '#fbbf24',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-primary text-slate-100">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 nav-scrolled animate-slide-down">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div></div>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+                <a href="index.html" class="nav-link hover:text-accent transition">Home</a>
+                <a href="about.html" class="nav-link hover:text-accent transition">About</a>
+                <a href="classes.html" class="nav-link hover:text-accent transition">Classes</a>
+                <a href="gallery.html" class="nav-link hover:text-accent transition">Gallery</a>
+                <a href="contact.html" class="nav-link text-accent">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-primary/95 backdrop-blur-lg border-b border-white/10 p-6 flex-col space-y-4 text-center md:hidden">
+            <a href="index.html" class="text-lg">Home</a>
+            <a href="about.html" class="text-lg">About</a>
+            <a href="classes.html" class="text-lg">Classes</a>
+            <a href="gallery.html" class="text-lg">Gallery</a>
+            <a href="contact.html" class="text-lg text-accent">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-40 pb-20 bg-slate-900 overflow-hidden relative">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 font-heading">Get In Touch</h1>
+            <p class="text-slate-400 max-w-2xl mx-auto">Have questions about classes or media training? Feel free to
+                reach out via any of the channels below.</p>
+        </div>
+    </header>
+
+    <!-- Contact Info Cards -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+
+                <a href="tel:0715717757" class="glass-card p-10 rounded-3xl text-center group animate-fade-in">
+                    <div
+                        class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-accent group-hover:text-primary transition-all">
+                        <i class="fas fa-phone text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-1">Call Me</h4>
+                    <p class="text-slate-400">071-5717757</p>
+                </a>
+
+                <a href="https://wa.me/94715717757" target="_blank"
+                    class="glass-card p-10 rounded-3xl text-center group animate-fade-in">
+                    <div
+                        class="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-green-600 group-hover:text-white transition-all">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-1">WhatsApp</h4>
+                    <p class="text-slate-400">071-5717757</p>
+                </a>
+
+                <a href="https://www.facebook.com/share/p/1AjBsUZ4dL/" target="_blank"
+                    class="glass-card p-10 rounded-3xl text-center group animate-fade-in">
+                    <div
+                        class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i class="fab fa-facebook-f text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-1">Facebook</h4>
+                    <p class="text-slate-400">Gayan Ranawansha</p>
+                </a>
+
+                <a href="https://www.youtube.com/live/9cSQGZBtNzE?si=VngwMAlRqsJomWMH" target="_blank"
+                    class="glass-card p-10 rounded-3xl text-center group animate-fade-in">
+                    <div
+                        class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-red-600 group-hover:text-white transition-all">
+                        <i class="fab fa-youtube text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold mb-1">YouTube</h4>
+                    <p class="text-slate-400">Latest Live Session</p>
+                </a>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto items-center">
+                <div class="glass p-12 rounded-3xl">
+                    <h3 class="text-3xl font-bold mb-8 font-heading">Send a Message</h3>
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label
+                                    class="block text-sm font-bold text-slate-500 mb-2 uppercase tracking-wider">Name</label>
+                                <input id="contactName" name="name" type="text" placeholder="Full Name" required
+                                    class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-accent">
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-sm font-bold text-slate-500 mb-2 uppercase tracking-wider">Email</label>
+                                <input id="contactEmail" name="email" type="email" placeholder="example@gmail.com"
+                                    required
+                                    class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-accent">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label
+                                    class="block text-sm font-bold text-slate-500 mb-2 uppercase tracking-wider">Phone
+                                    Number</label>
+                                <input id="contactPhone" name="phone" type="tel" placeholder="076 5325985" required
+                                    class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-accent">
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-sm font-bold text-slate-500 mb-2 uppercase tracking-wider">School
+                                    Name</label>
+                                <input id="contactSchool" name="school" type="text" placeholder="Your School" required
+                                    class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-accent">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label
+                                    class="block text-sm font-bold text-slate-500 mb-2 uppercase tracking-wider">Grade</label>
+                                <select id="contactGrade" name="grade" required
+                                    class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-accent text-slate-400">
+                                    <option value="" disabled selected>Select Grade</option>
+                                    <option value="12">Grade 12</option>
+                                    <option value="13">Grade 13</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-500 mb-2 uppercase tracking-wider">Exam
+                                    Attempt</label>
+                                <select id="contactAttempt" name="attempt" required
+                                    class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-accent text-slate-400">
+                                    <option value="" disabled selected>Select Attempt</option>
+                                    <option value="1st">First Attempt (1st)</option>
+                                    <option value="2nd">Second Attempt (2nd)</option>
+                                    <option value="3rd">Third Attempt (3rd)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label
+                                class="block text-sm font-bold text-slate-500 mb-2 uppercase tracking-wider">Subject</label>
+                            <input id="contactSubject" name="subject" type="text" placeholder="Joined Class Inquiry"
+                                required
+                                class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-accent">
+                        </div>
+                        <div>
+                            <label
+                                class="block text-sm font-bold text-slate-500 mb-2 uppercase tracking-wider">Message</label>
+                            <textarea id="contactMessage" name="message" rows="5" placeholder="Your message here..."
+                                required
+                                class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-accent"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-accent hover:bg-white text-primary font-bold py-4 rounded-xl transition-all duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="hidden md:block">
+                    <img src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&q=80&w=1500"
+                        alt="Contact" class="rounded-3xl shadow-2xl opacity-50 grayscale">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-24 pb-12 bg-slate-900 border-t border-white/5 relative overflow-hidden">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 relative z-10">
+            <div class="animate-fade-in">
+                <a href="#" class="text-2xl font-bold font-heading mb-6 block">
+                    <span class="text-yellow-400">GAYAN</span> <span class="text-green-500">RANAWANSHA</span>
+                </a>
+                <p class="text-slate-500 max-w-md">Professional Media Education for students aiming for excellence.
+                    Building the future of media in Sri Lanka one class at a time.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-accent">Quick Links</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                    <li><a href="classes.html" class="hover:text-white transition">Classes</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-accent">Contact</h4>
+                <p class="text-slate-400 mb-2">071-5717757</p>
+                <p class="text-slate-400">071-5717757 (WhatsApp)</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-12 pt-8 border-t border-white/5 text-center text-slate-600 text-sm">
+            &copy; 2024 Gayan Ranawansha Media. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

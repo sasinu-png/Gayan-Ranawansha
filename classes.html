@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule | Gayan Ranawansha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#22d3ee',
+                        gold: '#fbbf24',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-primary text-slate-100">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 nav-scrolled animate-slide-down">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div></div>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+                <a href="index.html" class="nav-link hover:text-accent transition">Home</a>
+                <a href="about.html" class="nav-link hover:text-accent transition">About</a>
+                <a href="classes.html" class="nav-link text-accent">Classes</a>
+                <a href="gallery.html" class="nav-link hover:text-accent transition">Gallery</a>
+                <a href="contact.html" class="nav-link hover:text-accent transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-primary/95 backdrop-blur-lg border-b border-white/10 p-6 flex-col space-y-4 text-center md:hidden">
+            <a href="index.html" class="text-lg">Home</a>
+            <a href="about.html" class="text-lg">About</a>
+            <a href="classes.html" class="text-lg text-accent">Classes</a>
+            <a href="gallery.html" class="text-lg">Gallery</a>
+            <a href="contact.html" class="text-lg">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-40 pb-20 bg-slate-900">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 font-heading">Class Schedule</h1>
+            <p class="text-slate-400 max-w-2xl mx-auto">Discover the locations and times where Gayan Ranawansha conducts
+                his expert media classes. Reach out to join any of these sessions.</p>
+        </div>
+    </header>
+
+    <!-- Time Table Section -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Saturday 1 -->
+                <div class="glass-card p-10 rounded-3xl border-l-4 border-l-gold animate-fade-in">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-gold font-bold uppercase tracking-widest text-sm">Saturday</span>
+                        <div class="bg-gold/10 text-gold px-3 py-1 rounded-full text-xs font-bold">10:00 - 12:00</div>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 font-heading">Azone</h2>
+                    <p class="flex items-center text-slate-400 mb-6">
+                        <i class="fas fa-map-marker-alt text-accent mr-3"></i> Kalutara
+                    </p>
+                    <a href="contact.html" class="text-accent hover:underline flex items-center">
+                        Join Class <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Saturday 2 -->
+                <div class="glass-card p-10 rounded-3xl border-l-4 border-l-gold animate-fade-in">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-gold font-bold uppercase tracking-widest text-sm">Saturday</span>
+                        <div class="bg-gold/10 text-gold px-3 py-1 rounded-full text-xs font-bold">08:00 - 10:00</div>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 font-heading">Tharupiyasa</h2>
+                    <p class="flex items-center text-slate-400 mb-6">
+                        <i class="fas fa-map-marker-alt text-accent mr-3"></i> Kalutara
+                    </p>
+                    <a href="contact.html" class="text-accent hover:underline flex items-center">
+                        Join Class <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Thursday -->
+                <div class="glass-card p-10 rounded-3xl border-l-4 border-l-accent animate-fade-in">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-accent font-bold uppercase tracking-widest text-sm">Thursday</span>
+                        <div class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">04:30 - 06:30
+                        </div>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 font-heading">Didula</h2>
+                    <p class="flex items-center text-slate-400 mb-6">
+                        <i class="fas fa-map-marker-alt text-accent mr-3"></i> Pothuvila
+                    </p>
+                    <a href="contact.html" class="text-accent hover:underline flex items-center">
+                        Join Class <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Friday -->
+                <div class="glass-card p-10 rounded-3xl border-l-4 border-l-accent animate-fade-in">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-accent font-bold uppercase tracking-widest text-sm">Friday</span>
+                        <div class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">02:30 - 04:30
+                        </div>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 font-heading">Rovistar</h2>
+                    <p class="flex items-center text-slate-400 mb-6">
+                        <i class="fas fa-map-marker-alt text-accent mr-3"></i> Matugama
+                    </p>
+                    <a href="contact.html" class="text-accent hover:underline flex items-center">
+                        Join Class <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Monday 1 -->
+                <div class="glass-card p-10 rounded-3xl border-l-4 border-l-accent animate-fade-in">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-accent font-bold uppercase tracking-widest text-sm">Monday</span>
+                        <div class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">02:30 - 04:30
+                        </div>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 font-heading">Excel</h2>
+                    <p class="flex items-center text-slate-400 mb-6">
+                        <i class="fas fa-map-marker-alt text-accent mr-3"></i> Maggona
+                    </p>
+                    <a href="contact.html" class="text-accent hover:underline flex items-center">
+                        Join Class <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Monday 2 -->
+                <div class="glass-card p-10 rounded-3xl border-l-4 border-l-accent animate-fade-in">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="text-accent font-bold uppercase tracking-widest text-sm">Monday</span>
+                        <div class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold">04:30 - 06:30
+                        </div>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 font-heading">Victri</h2>
+                    <p class="flex items-center text-slate-400 mb-6">
+                        <i class="fas fa-map-marker-alt text-accent mr-3"></i> Daluvatta
+                    </p>
+                    <a href="contact.html" class="text-accent hover:underline flex items-center">
+                        Join Class <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar-section" class="py-24 bg-slate-900/40">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-heading">2026 Class Calendar</h2>
+                <div class="flex items-center justify-center space-x-4 mb-4">
+                    <div class="flex items-center text-xs text-slate-400 uppercase tracking-widest">
+                        <span class="w-2 h-2 rounded-full bg-accent mr-2 border border-accent/50"></span> Class
+                        Scheduled
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-8 items-start">
+                <!-- Calendar -->
+                <div class="calendar-container shadow-2xl animate-fade-in animate-delay-1 flex-1 w-full">
+                    <div class="calendar-header px-4">
+                        <button id="prevMonth"
+                            class="p-3 hover:bg-white/10 rounded-full transition-all border border-white/5 active:scale-90">
+                            <i class="fas fa-chevron-left text-accent"></i>
+                        </button>
+                        <h3 id="monthTitle" class="text-2xl font-bold font-heading text-white">Month YYYY</h3>
+                        <button id="nextMonth"
+                            class="p-3 hover:bg-white/10 rounded-full transition-all border border-white/5 active:scale-90">
+                            <i class="fas fa-chevron-right text-accent"></i>
+                        </button>
+                    </div>
+                    <div class="calendar-grid text-center">
+                        <div class="calendar-day-name border-b border-white/5 pb-4">Sun</div>
+                        <div class="calendar-day-name border-b border-white/5 pb-4">Mon</div>
+                        <div class="calendar-day-name border-b border-white/5 pb-4">Tue</div>
+                        <div class="calendar-day-name border-b border-white/5 pb-4">Wed</div>
+                        <div class="calendar-day-name border-b border-white/5 pb-4">Thu</div>
+                        <div class="calendar-day-name border-b border-white/5 pb-4">Fri</div>
+                        <div class="calendar-day-name border-b border-white/5 pb-4">Sat</div>
+                    </div>
+                    <div id="calendar-grid" class="calendar-grid mt-4">
+                        <!-- Populated by JS -->
+                    </div>
+                    <div id="calendar-details" class="calendar-details">
+                        <p class="text-slate-500 text-center italic">Select a date with the dot to see class times and
+                            locations.</p>
+                    </div>
+                </div>
+
+                <!-- Watch/Clock on the Right -->
+                <div
+                    class="lg:w-80 w-full flex flex-col items-center justify-center glass-card p-10 rounded-[2rem] animate-fade-in animate-delay-2">
+                    <div class="clock-logo hero-clock mx-auto">
+                        <div class="clock-number num-12"><span>12</span></div>
+                        <div class="clock-number num-1"><span>1</span></div>
+                        <div class="clock-number num-2"><span>2</span></div>
+                        <div class="clock-number num-3"><span>3</span></div>
+                        <div class="clock-number num-4"><span>4</span></div>
+                        <div class="clock-number num-5"><span>5</span></div>
+                        <div class="clock-number num-6"><span>6</span></div>
+                        <div class="clock-number num-7"><span>7</span></div>
+                        <div class="clock-number num-8"><span>8</span></div>
+                        <div class="clock-number num-9"><span>9</span></div>
+                        <div class="clock-number num-10"><span>10</span></div>
+                        <div class="clock-number num-11"><span>11</span></div>
+                        <div class="hand hour-hand"></div>
+                        <div class="hand minute-hand"></div>
+                        <div class="hand second-hand"></div>
+                    </div>
+                    <div class="digital-time text-2xl mt-4">00:00:00</div>
+                    <p class="text-xs text-slate-500 uppercase tracking-widest mt-4">Sri Lanka Time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-24 pb-12 bg-slate-900 border-t border-white/5 relative overflow-hidden">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 relative z-10">
+            <div class="animate-fade-in">
+                <a href="#" class="text-2xl font-bold font-heading mb-6 block">
+                    <span class="text-yellow-400">GAYAN</span> <span class="text-green-500">RANAWANSHA</span>
+                </a>
+                <p class="text-slate-500 max-w-md">Professional Media Education for students aiming for excellence.
+                    Building the future of media in Sri Lanka one class at a time.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-accent">Quick Links</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                    <li><a href="classes.html" class="hover:text-white transition">Classes</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-accent">Contact</h4>
+                <p class="text-slate-400 mb-2">071-5717757</p>
+                <p class="text-slate-400">071-5717757 (WhatsApp)</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-12 pt-8 border-t border-white/5 text-center text-slate-600 text-sm">
+            &copy; 2024 Gayan Ranawansha Media. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <!-- Notification Modal -->
+    <div id="classModal" class="modal-overlay">
+        <div class="modal-content">
+            <div id="modalBody">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Gayan Ranawansha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#22d3ee',
+                        gold: '#fbbf24',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-primary text-slate-100">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 nav-scrolled animate-slide-down">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div></div>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+                <a href="index.html" class="nav-link hover:text-accent transition">Home</a>
+                <a href="about.html" class="nav-link hover:text-accent transition">About</a>
+                <a href="classes.html" class="nav-link hover:text-accent transition">Classes</a>
+                <a href="gallery.html" class="nav-link text-accent">Gallery</a>
+                <a href="contact.html" class="nav-link hover:text-accent transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-primary/95 backdrop-blur-lg border-b border-white/10 p-6 flex-col space-y-4 text-center md:hidden">
+            <a href="index.html" class="text-lg">Home</a>
+            <a href="about.html" class="text-lg">About</a>
+            <a href="classes.html" class="text-lg">Classes</a>
+            <a href="gallery.html" class="text-lg text-accent">Gallery</a>
+            <a href="contact.html" class="text-lg">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-40 pb-20 bg-slate-900">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 font-heading">Visual Portfolio</h1>
+            <p class="text-slate-400 max-w-2xl mx-auto">Moments from classes, media workshops, and industry events led
+                by Gayan Ranawansha.</p>
+        </div>
+    </header>
+
+    <!-- Gallery Grid -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Main User Photo Placeholder -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl aspect-square border border-white/10 animate-fade-in">
+                    <img src="gayan3.jpeg" alt="Gayan Ranawansha"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                        <div>
+                            <h4 class="text-xl font-bold">Gayan Ranawansha</h4>
+                            <p class="text-accent text-sm">Media Teacher</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Item 1 (Banner) -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl aspect-square border border-white/10 animate-fade-in animate-delay-1">
+                    <img src="gayan19.jpeg" alt="Gayan Ranawansha"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                        <div>
+                            <h4 class="text-xl font-bold">Media & Communication</h4>
+                            <p class="text-accent text-sm">Official Banner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Item 2 (Poster) -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl aspect-square border border-white/10 animate-fade-in animate-delay-2">
+                    <img src="gayan6.jpeg" alt="Class Promo"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                        <div>
+                            <p class="text-sm font-bold uppercase tracking-widest text-accent">Mass Communication
+                                Studies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Item 3 (Group - World's End) -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl aspect-square border border-white/10 animate-fade-in animate-delay-3">
+                    <img src="gayan11.jpeg" alt="Field Trip"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                        <div>
+                            <p class="text-sm font-bold uppercase tracking-widest text-accent">Educational Field Trip
+                            </p>
+                            <p class="text-slate-300 text-xs">World's End - Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Item 4 (Leopard Mural) -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl aspect-square border border-white/10 animate-fade-in animate-delay-1">
+                    <img src="gayan17.jpeg" alt="Hortons Plains"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                        <div>
+                            <p class="text-sm font-bold uppercase tracking-widest text-accent">Natural Heritage
+                                Awareness</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Item 5 (Portrait World's End) -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl aspect-square border border-white/10 animate-fade-in animate-delay-2">
+                    <img src="gayan15.jpeg" alt="Portrait"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                        <div>
+                            <h4 class="text-xl font-bold">Inspiration</h4>
+                            <p class="text-accent text-sm">At World's End</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teaching Moment 2 -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl aspect-square border border-white/10 animate-fade-in animate-delay-3">
+                    <img src="gayan9.jpeg" alt="Camera"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                        <p class="text-sm font-bold uppercase tracking-widest text-accent">Cinematography Session</p>
+                    </div>
+                </div>
+
+                <!-- Teaching Moment 3 -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl aspect-square border border-white/10 animate-fade-in">
+                    <img src="gayan8.jpeg" alt="Classroom"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                        <p class="text-sm font-bold uppercase tracking-widest text-accent">Interactive Seminar</p>
+                    </div>
+                </div>
+
+                <!-- Teaching Moment 4 -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl aspect-square border border-white/10 animate-fade-in animate-delay-1">
+                    <img src="gayan13.jpeg" alt="Audio"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                        <p class="text-sm font-bold uppercase tracking-widest text-accent">Radio & Audio Lab</p>
+                    </div>
+                </div>
+
+                <!-- Teaching Moment 5 -->
+                <div
+                    class="relative group overflow-hidden rounded-3xl aspect-square border border-white/10 animate-fade-in animate-delay-2">
+                    <img src="gayan19.jpeg" alt="Production"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                        <p class="text-sm font-bold uppercase tracking-widest text-accent">Production Planning</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-24 pb-12 bg-slate-900 border-t border-white/5 relative overflow-hidden">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12 relative z-10">
+            <div class="animate-fade-in">
+                <a href="#" class="text-2xl font-bold font-heading mb-6 block">
+                    <span class="text-yellow-400">GAYAN</span> <span class="text-green-500">RANAWANSHA</span>
+                </a>
+                <p class="text-slate-500 max-w-md">Professional Media Education for students aiming for excellence.
+                    Building the future of media in Sri Lanka one class at a time.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-accent">Quick Links</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                    <li><a href="classes.html" class="hover:text-white transition">Classes</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase text-sm tracking-widest text-accent">Contact</h4>
+                <p class="text-slate-400 mb-2">071-5717757</p>
+                <p class="text-slate-400">071-5717757 (WhatsApp)</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-12 pt-8 border-t border-white/5 text-center text-slate-600 text-sm">
+            &copy; 2024 Gayan Ranawansha Media. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
